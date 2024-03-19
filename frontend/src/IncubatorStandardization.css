@@ -148,40 +148,4 @@ h1 {
   }
 }
 
-/* Header */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.header-left {
-  display: flex;
-}
-
-.header-right {
-  display: flex;
-}
-
-.header-button {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-left: 10px;
-  transition: background-color 0.3s;
-}
-
-.header-button:hover {
-  background-color: #0056b3;
-}
-
-.header-icon {
-  margin-right: 5px;
-}
 
