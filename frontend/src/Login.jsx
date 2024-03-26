@@ -39,11 +39,11 @@ const Login = () => {
         }}
       >
         <div style={{ textAlign: 'center' }}>   
-          <img src={require('./ATUR (2) 1.png')} alt="ATUR Logo" style={{ maxWidth: '30vw', maxHeight: '30vh' }} />
-          <h1 style={{ fontSize: '2.5vw', fontWeight: 'bold' }}>SELAMAT DATANG DI ATUR</h1>
-          <p style={{ fontSize: '1.5vw' }}>Artificial Intelligence Task Automation and Regulation</p>
-          <p style={{ fontSize: '1vw' }}>Mendata hasil inkubator serta uji kelayakan sesuai standarisasi</p>
-          <img src={require('./koran.png')} alt="koran" style={{ maxWidth: '40vw', maxHeight: '40vh' }} />
+          <img src={require('./ATUR (2) 1.png')} alt="ATUR Logo" style={{ maxWidth: '50vw', maxHeight: '40vh' }} />
+          <h1 style={{ fontSize: '5vh', fontWeight: 'bold' }}>SELAMAT DATANG DI ATUR</h1>
+          <p style={{ fontSize: '4vh' }}>Artificial Intelligence Task Automation and Regulation</p>
+          <p style={{ fontSize: '3vh' }}>Mendata hasil inkubator serta uji kelayakan sesuai standarisasi</p>
+          <img src={require('./koran.png')} alt="koran" style={{ maxWidth: '50vw', maxHeight: '50vh' }} />
         </div>
       </div>
       
@@ -59,14 +59,14 @@ const Login = () => {
         <div className="hero-body">
           <div className="container">
             <div className="columns is-centered">
-              <div className="column is-4">
-                <form onSubmit={Auth} className="box">
+              <div className="column is-8">
+                <form onSubmit={Auth} className="container">
                   {isError && <p className="has-text-centered" style={{ color: 'red', marginBottom: '1rem' }}>{message}</p>}
-                  <h2 style={{ marginBottom: '0rem', fontSize: '2rem', textAlign: 'center', fontWeight: 'bold', marginRight: '1rem' }}>Masuk</h2>
+                  <h2 style={{ marginBottom: '0.5rem', fontSize: '3rem', textAlign: 'center', fontWeight: 'bold', marginRight: '1rem' }}>Masuk</h2>
                   <div className='mb-3'>
-                    <label htmlFor='email' style={{ fontSize: '1.2rem', fontWeight: 'bold' }}><strong>Email</strong></label>
+                    <label htmlFor='email' style={{ fontSize: '2rem', fontWeight: 'bold' }}><strong>Email</strong></label>
                     <div className="input-group" style={{ flex: 1 }}>
-                      <span className="input-group-text"><FaUserAlt /></span>
+                      <span className="input-group-text" style={{ marginRight: '0.5vh', fontSize: '2rem' }}><FaUserAlt /></span>
                       <input
                         type='email'
                         placeholder='Masukan Email'
@@ -74,14 +74,14 @@ const Login = () => {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         className='form-control rounded-0'
-                        style={{ fontSize: '1rem' }}
+                        style={{ fontSize: '2rem' }}
                       />
                     </div>
                   </div>
-                  <div className='mb-3'>
-                    <label htmlFor='password' style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>Password</label>
-                    <div className="input-group">
-                      <span className="input-group-text"><FaLock /></span>
+                  <div className='mb-3' style={{ width: '100%' }}>
+                    <label htmlFor='password' style={{ fontSize: '2rem', fontWeight: 'bold' }}>Password</label>
+                    <div className="input-group" style={{ flex: 1 }}>
+                      <span className="input-group-text" style={{ marginRight: '0.5vh', fontSize: '2rem'  }}><FaLock /></span>
                       <input
                         type='password'
                         placeholder='Masukan kata Sandi'
@@ -89,13 +89,14 @@ const Login = () => {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         className='form-control rounded-0'
-                        style={{ fontSize: '1rem' }}
+                        style={{ fontSize: '2rem' }}
                       />
                     </div>
                   </div>
                   <button
                     type="submit"
                     className="button is-success is-fullwidth"
+                    style={{ fontSize: '1vw', marginTop: '1vh' }}
                   >
                     {isLoading ? "Loading..." : "Login"}
                   </button>
