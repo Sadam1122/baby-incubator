@@ -1,4 +1,4 @@
-#**Baby-Incubator**
+#Baby-Incubator
 
 **Deskripsi:**
 Baby-Incubator adalah proyek yang bertujuan untuk mengembangkan sistem manajemen dan monitoring inkubator bayi berbasis IoT. Proyek ini dibuat untuk memberikan solusi inovatif dalam merawat bayi prematur dengan memanfaatkan teknologi terkini.
