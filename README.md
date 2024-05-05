@@ -1,4 +1,4 @@
-#Baby-Incubator
+# Baby-Incubator
 
 **Deskripsi:**
 Baby-Incubator adalah proyek yang bertujuan untuk mengembangkan sistem manajemen dan monitoring inkubator bayi berbasis IoT. Proyek ini dibuat untuk memberikan solusi inovatif dalam merawat bayi prematur dengan memanfaatkan teknologi terkini.
@@ -33,3 +33,5 @@ Proyek ini dilisensikan di bawah Lisensi MIT - lihat file **LICENSE** untuk deta
 Untuk informasi lebih lanjut, silakan hubungi kami di sadamalrasyid1@gmail.com.
 
 **Terima kasih atas dukungan dan kontribusi Anda!**
+
+© 2024 Baby-Incubator. Dilisensikan di bawah [lisensi MIT](link-lisensi).
