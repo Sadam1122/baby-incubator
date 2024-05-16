@@ -1,19 +1,32 @@
-import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Login from './Login'
-import Signup from './Signup'
-import Home from './Home'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
+import Login from "./components/Login";
+import Users from "./pages/Users";
+import Products from "./pages/Products";
+import AddUser from "./pages/AddUser";
+import EditUser from "./pages/EditUser";
+import AddProduct from "./pages/AddProduct";
+import EditProduct from "./pages/EditProduct";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/login' element={<Login />} />
-        <Route path='/signup' element={<Signup />} />
-        <Route path='/home' element={<Home />} />
-      </Routes>
-    </BrowserRouter>
-  )
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/users/add" element={<AddUser />} />
+          <Route path="/users/edit/:id" element={<EditUser />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/add" element={<AddProduct />} />
+          <Route path="/products/edit/:id" element={<EditProduct />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
 
-export default App
+export default App;
